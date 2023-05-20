@@ -1,57 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="css-assets/style.css">  
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div id="logo-block">
-          <h6 id="logo">Furnico</h6>  
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="css-assets/style.css">
+  <link rel="stylesheet" href="css-assets/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="nav-bar" class="d-flex flex-column  p-3 bg-blue border-bottom box-shadow fixed-top">
+
+    <!-- ==========LOGO========= -->
+
+    <h1 id="logo" class="border-bottom-black box-shadow mx-auto ">FurniCo</h1>
+
+    <!-- =========LINKS========== -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="cart.html"><i id="cart-icon" class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="aboutUs.html">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="cart.html">Cart</a></li>
-        </ul>    
-      </nav> 
-    </header>  
-    <main>
-      <h1>Contact Us</h1> 
-      <h3>Feel free to contact us through any of the given medias</h3> 
-      <div id="contb"> 
-        <ul> 
-          <li> 
-            <strong>Contact info</strong> 
-            <p>Email: furnico@gmail.com<br> 
-            Tele: 123 456 7890 
-            </p> 
-          </li> 
-            <li>Customer Service Working Hours:<br> 
-              Weekdays 8h00 – 20h00<br> 
-              Weekends 9h00 – 18h00<br> 
-              Public Holidays 9h00 – 16h00<br> 
-              (Closed on Christmas & New Year’s Day) 
-            </li>   
-            <li> 
-              Cape Town Whale Street, <br>Something Building <br>123 Playground Road, 8001.                         
-            </li>  
-            <li> 
-              Takealot Pickup Point Operating Hours:<br> 
-              Weekdays 8h00 – 18h00<br> 
-              Weekends 11h00 – 17h00<br> 
-              Public Holidays 11h00 – 17h00 <br> 
-            </li> 
-        </ul> 
-      </div>   
-      <img src="_images/contact-main(1).jpg">
-    </main>   
-  </body>
- 
+      </div>
+    </nav>
+  </div>
+
+  <main id="contact-main">
+    <h1>Contact Us</h1>
+    <h3>Feel free to contact us through any of the given medias</h3>
+    
+    <div id="contact-pseudoGrid">
+      <div id="contact-box">
+        <strong>Contact info</strong>
+        <p>Email: furnico@gmail.com<br>
+          Tele: 123 456 7890
+        </p>
+      </div>
+      <div id="contact-box">
+        Customer Service Working Hours:<br>
+        Weekdays 8h00 – 20h00<br>
+        Weekends 9h00 – 18h00<br>
+        Public Holidays 9h00 – 16h00<br>
+        (Closed on Christmas & New Year’s Day)
+      </div>
+      <div id="contact-box">
+        Cape Town Whale Street, <br>Something Building <br>123 Playground Road, 8001.
+      </div>
+      <div id="contact-box">
+        Takealot Pickup Point Operating Hours:<br>
+        Weekdays 8h00 – 18h00<br>
+        Weekends 11h00 – 17h00<br>
+        Public Holidays 11h00 – 17h00 <br>
+      </div>
+    </div>
+    <img src="_images/contact-main(1).jpg">
+  </main>
+
+  <footer>
+    <div id="media">
+      <h3>Follow us on</h3>
+      <p>
+        <i class="fa-brands fa-square-whatsapp"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-whatsapp"></i>
+      </p>
+    </div>
+    <div id="copyright">
+      <p>Designed by Ben | Furnico&trade;</p>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/7586d960b0.js" crossorigin="anonymous"></script>
+  <script src="js-assets/bootstrap.bundle.min.js"></script>
+  <script src="js-assets/jquery-3.6.3.min.js"></script>
+</body>
+
 </html>
