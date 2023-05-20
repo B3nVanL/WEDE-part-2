@@ -1,0 +1,458 @@
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  /* background-color: #000000; */
+  font-family: 'Dosis', sans-serif;
+}
+
+/* ====================== HEADER ====================== */
+
+#nav-bar{
+  background-color: #b9b9e2;
+}
+
+.navbar-brand{
+  text-align: right;
+}
+
+#nav-bar a{
+  width: 90px;
+  color: #350053;
+}
+
+#nav-bar a:hover{
+  color: #ffefef;
+}
+
+#cart-icon{
+  color: #2e1313;
+  font-size: 1.3rem;
+}
+
+#cart-icon:hover{
+  color: #ffebeb;
+}
+
+#logo {
+  font-family: 'Amatic SC', cursive;
+  border-bottom: 1px solid #181e74;
+}
+
+
+
+/* ========FIXED IMG========= */
+
+
+
+.blog-header{
+  background-image: url("/_images/home-header-fixed.jpg");
+  min-height: 0px;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0px;
+  margin-bottom: 0px;
+}
+
+/* ======== TEXT IN FIXED IMG========= */
+
+#page-title{
+  font-weight: 500;
+  font-size: 4rem;
+  color: #181e74;
+}
+
+#home-header p{
+  color: #181e74;
+  font-weight: 600;
+}
+
+
+
+/* ====================== MAIN ====================== */
+
+#index-main{
+  background-color: #f5a8a8;
+  border: rgba(0, 0, 0, 0.5) 1px solid;
+  display: flex;
+}
+
+#main-container{
+  /* border: solid 2px #8769d8; */
+  background-color: #f5a8a8;
+  padding: 20px 10px;
+  width: 70%;
+  margin: auto 0px;
+}
+
+#main-container h3{
+  padding: 0px;
+}
+
+#main-container p{
+  padding: 100px 110xp 0xp 0px;
+}
+
+#button{
+  padding: 0px 2px 2px 2px;
+  background-color: #da6b6b;
+  text-decoration: none;
+  text-align: center;
+  color: #d4f3f3;
+  border: none;
+  border-radius: 5px;
+}
+
+#button:hover{
+    /* border: #757d85 solid 1px; */
+    background: linear-gradient(#0e0b3883, #838691);
+}
+
+
+#main-img{
+  max-width: 400px;
+}
+
+
+/* ======================FOOTER====================== */
+ 
+footer{
+  /* width: 100%; */
+  text-align: center;
+  margin: 0;
+  padding: 0px;
+}
+
+#media{
+  background-color: #c2cceb;
+  padding: 2.6em 0px 2.1em 0px;  
+  /* height: 140px;
+  padding-top: 10px;
+  padding-left: 0px; */
+}
+
+footer h3{
+  color: #350053;
+}
+
+i{
+  padding: 1px 3px;
+  font-size: 2.5rem;
+  color: #404083;
+} 
+
+/* ======== Copyright ========= */
+
+#copyright{
+  padding: 2.6em 0px 2em 0px;
+  background-color: #0f5748;
+} 
+
+#copyright p{ 
+  font-size: 16px;
+  letter-spacing: 0,1em;
+  text-transform: uppercase;
+  color: #f3c9c9;
+} 
+
+
+/* ================================================== */
+/* ================= Products Page ================== */
+/* ================================================== */
+
+
+#products-main{
+  /* background-color: #000000; */
+  padding-top: 10px;
+  text-align: center;
+  margin: 30px auto;
+  width: 90%;
+}
+
+#products-main h2{
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: -1px;
+  padding: 0px 0px 0px 0px;
+  color: #47253f;
+}
+
+#products-main p{
+  text-align: center;
+  padding: 0px 0px;
+  color: #47253f;
+  font-size: 20px;
+}
+
+/* #products-main h1{
+  color: #181e74;
+  font-size: 60px;
+}
+
+#products-main h3{
+  color: #181e74;
+} */
+
+#item-grid {
+  border: 1px #000000 solid;
+  border-radius: 20px;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+}
+
+#box{
+  /* text-align: center; */
+  border: solid 1px #fff0f0;
+  border-radius: 20px;
+  /* line-height: 5px; */
+  height: 380px;
+  background-color: #bfdaf5;
+  text-align: center;
+  padding-top: 18px;
+}
+
+#item-grid p{
+  margin: auto;
+  width: 95%;
+  color: #423926;
+  border: #c79a9a solid 1px;
+  border-radius: 10px;
+}
+
+#item-grid img{
+  width: 80%;
+  height: 80%;
+  margin-top: 15px;
+  padding: 1px 1px 1px 1px;
+  border-radius: 15px;
+}
+
+#item-grid img:hover{
+  transition:  0.5s ease-in;
+  transform: scale(1.2);
+  box-shadow: 3px 3px 3px #1e1b1a;
+}
+
+
+/* =============== PRODUCT MEDIA QUERIES old =============== */
+
+@media all and (max-width: 500px) {
+
+  #item-grid {
+    border: 1px #000000 solid;
+    border-radius: 20px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  }
+
+  #item-grid img{
+      width: 90%;
+      /* height: 20%; */
+  }
+  
+  #box{
+      height: 300px;
+      text-align: center;
+      padding-top: 10px;
+  }
+
+  #item-grid img:hover{
+      transform: scale(.5);
+  }
+}
+
+@media all and (max-width: 768px) {
+
+  #box{
+      height: 300px;
+      text-align: center;
+      padding-top: 18px;
+  }
+
+  #item-grid img{
+      width: 80%;
+      height: 80%;
+  }
+
+  #item-grid img:hover{
+      transform: scale(1.4);
+  }
+}
+
+
+/* ================================================== */
+/* ================= Products Page ================== */
+/* ================================================== */
+
+
+#about-us-main{
+  padding: 10px 0px 0px 0px;
+  border: #000000 5px solid;
+  width: 90%;
+  margin: 10px auto;
+  color: #47253f;
+}
+
+#about-us-main h1{
+  width: 70%;
+  margin: 10px auto;
+  background-color: #dbb8b8;
+  border: #3b1f1f 1px solid;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 45px;
+  padding: 0px 0px 4px 0px;
+}
+
+#about-us-main p{
+  width: 90%;
+  margin: 10px auto;
+  background-color: #e6d2d2;
+  border: #3b1f1f 1px solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+}
+
+#about-us-main img{
+  width: 100%;
+  margin: auto;
+}
+
+
+
+
+
+
+
+/* ======================COMMON STUFF====================== */
+
+
+/* ======================COMMON STUFF====================== */
+
+
+
+
+/* ======== NAV FIXES ========= */
+
+.blog-header, #products-main, #about-us-main{
+  margin-top: 8.8rem;
+}
+
+@media (max-width: 768px){
+  .blog-header, #products-main{
+      margin-top:8rem;
+  }
+}
+
+
+
+
+
+
+
+
+/* ======================MEDIA QUIRIES====================== */
+
+@media (max-width: 1020px){
+  .navbar-brand{
+    text-align: left;
+  }
+
+  .blog-header{
+    margin-top: 8.3rem;
+}
+
+}
+
+
+@media (max-width: 768px){
+  html{
+      font-size: 16px;
+  }
+
+  .navbar-brand{
+    text-align: left;
+  }
+
+  .blog-header{
+      
+      padding: 100px 0px;
+  }
+
+  #main-img{
+    max-width: 60%;
+  }
+  
+  /* ======= PRODUCTS ======= */
+
+  #products-main{
+    margin-top: 8.6rem;
+  }
+
+
+
+}
+
+@media (max-width: 570px){
+  #main-img{
+    max-width: 50%;
+  }
+
+  #products-main{
+    margin-top: 8rem;
+  }
+
+}
+
+
+@media (max-width: 430px){
+
+  .blog-header{
+    margin-top: 8rem;
+    background-image: url("/_images/home-header-fixed.jpg");
+    min-height: 0px;
+    padding: 100px 0px;
+  }
+
+  .navbar-brand{
+    text-align: left;
+  }
+
+  #index-main{
+    display: block;
+    width: 100%;
+  }
+  
+  #main-img{
+    max-width: 100%;
+    height: 100%;
+  }
+  #main-container p{
+    padding: 100px 110xp 0xp 0px;
+  }
+
+  #main-container{
+    width: 100%;
+  }
+
+
+  i{
+    font-size: 2rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

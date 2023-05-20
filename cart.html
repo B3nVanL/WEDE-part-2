@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css-assets/style.css">  
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="logo-block">
+            <h6 id="logo">Furnico</h6>  
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="aboutUs.html">About</a></li>
+          <li><a href="contactUs.html">Contact</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>    
+      </nav> 
+    </header>  
+    <main>
+      <h2>Purchase detials</h2>
+      <form name="registrsation" id="registrsation">
+        <label for="firstname">First name : </label>
+        <input type="text" id="firstname"/> <br><br> 
+        <label for="Last name">Last name : </label>
+        <input type="text" id="lastname" /> <br/><br/>
+        <label for="credit-card-info">Credit card number : </label>
+        <input type="text" id="credit-card-info" /> <br><br>
+        <label for="credit-card-info">Last three digits on back of credit card: </label>
+        <input type="text" id="credit-card-info" />  
+        <p>Please select your delivery method:</p>
+        <label for="deliver">Deliver : </label>
+        <input type="radio" id="male" name="transport" /> 
+        <label for="pickup">Pickup : </label><input type="radio" id="pickup" name="transport" /> <br/><br/>             
+        <p><input type="submit" value="Order & Pay" /></p>
+      </form>
+    </main>
+  </body>
+</html>
