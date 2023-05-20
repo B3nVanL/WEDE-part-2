@@ -35,23 +35,28 @@ body {
   color: #ffebeb;
 }
 
+/* =========== LOGO ============== */
+
 #logo {
+  font-size: 2.5em;
   font-family: 'Amatic SC', cursive;
   border-bottom: 1px solid #181e74;
 }
 
 /* ========FIXED IMG========= */
 
-.blog-header {
-  background-image: url(/_images/home-header-fixed.jpg);
-  min-height: 0px;  
+#home-header{
+  background-image: url(../_images/home-header-fixed.jpg);
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 0px;  
   padding: 200px 0px;
   margin-bottom: 0px;
 }
+
+
 
 /* ======== TEXT IN FIXED IMG========= */
 
@@ -103,7 +108,6 @@ body {
 }
 
 #button:hover {
-  /* border: #757d85 solid 1px; */
   background: linear-gradient(#0e0b3883, #838691);
 }
 
@@ -113,10 +117,9 @@ body {
 }
 
 
-/* ======================FOOTER====================== */
+/* ======================== FOOTER ========================= */
 
 footer {
-  /* width: 100%; */
   text-align: center;
   margin: 0;
   padding: 0px;
@@ -125,9 +128,6 @@ footer {
 #media {
   background-color: #c2cceb;
   padding: 2.6em 0px 2.1em 0px;
-  /* height: 140px;
-  padding-top: 10px;
-  padding-left: 0px; */
 }
 
 footer h3 {
@@ -138,6 +138,18 @@ i {
   padding: 1px 3px;
   font-size: 2.5rem;
   color: #404083;
+}
+
+@media (max-width: 768px) {
+  #media{
+    padding: 10px 0px;
+  }
+
+  #copyright{
+    /* height: 50px; */
+    /* padding: 40px; */
+    /* margin: auto; */
+  }
 }
 
 /* ======== Copyright ========= */
@@ -160,8 +172,7 @@ i {
 /* ================================================== */
 
 
-#products-main {
-  /* background-color: #000000; */
+#products-main{
   padding-top: 10px;
   text-align: center;
   margin: 30px auto;
@@ -182,15 +193,6 @@ i {
   color: #47253f;
   font-size: 20px;
 }
-
-/* #products-main h1{
-  color: #181e74;
-  font-size: 60px;
-}
-
-#products-main h3{
-  color: #181e74;
-} */
 
 #item-grid {
   border: 1px #000000 solid;
@@ -233,7 +235,7 @@ i {
 }
 
 
-/* =============== PRODUCT MEDIA QUERIES old =============== */
+/* =============== PRODUCT MEDIA QUERIES =============== */
 
 @media all and (max-width: 500px) {
 
@@ -279,7 +281,7 @@ i {
 
 
 /* ================================================== */
-/* ================= Products Page ================== */
+/* ================= ABOUT Page ================== */
 /* ================================================== */
 
 
@@ -330,9 +332,93 @@ i {
 /* ================== CONTACT PAGE ================== */
 /* ================================================== */
 
+#contact-main{
+  margin-top: 10rem;
+  color: #47253f;
+  text-align: center;
+}
+
+#contact-pseudoGrid{
+  margin: 1% 0px 2% 0px ;
+  border-radius: 10px;
+  border: #b0beec 7px solid;
+  width: 80%;
+  display: inline-flex;
+}
+
+#contact-box-long{
+  width: 35%;
+  padding: 4px 5px;
+  text-align: left;
+  border: #000000 1px solid;
+}
+
+#contact-box{
+  width: 25%;
+  padding: 4px 5px;
+  text-align: left;
+  border: #000000 1px solid;
+}
+
+#contact-main img{
+  width: 70%;
+}
 
 
+/* =============== CONTACT MEDIA QUERIES =============== */
 
+@media (max-width: 768px) {
+  #contact-main{
+    margin-top: 9rem;
+  }
+
+  #contact-pseudoGrid{
+    margin: 10px auto 15px auto;
+    border-radius: 10px;
+    border: #b0beec 7px solid;
+    width: 80%;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  }
+  
+  #contact-box,
+  #contact-box-long{
+    width: 100%;
+  }
+  
+}
+
+@media (max-width: 560px){
+
+
+  #contact-pseudoGrid{
+  border: none;
+  display: block;
+}
+
+}
+
+@media (max-width: 430px){
+  #contact-main{
+    margin-top: 9.5rem;
+  }
+  
+  #contact-pseudoGrid{
+    border: none;
+    display: block;
+  }
+  
+  #contact-box-long,
+  #contact-box{
+    padding: 2px 5px;
+    border: #ebd8d8 1px solid;
+  }
+  
+  #contact-main img{
+    width: 80%;
+    margin-bottom: 5px;
+  }
+}
 
 
 
@@ -352,7 +438,7 @@ i {
 
 @media (max-width: 768px) {
   .blog-header,
-  #products-main {
+  #products-main,{
     margin-top: 8rem;
   }
 }
@@ -441,7 +527,6 @@ i {
   #main-container {
     width: 100%;
   }
-
 
   i {
     font-size: 2rem;
