@@ -43,8 +43,8 @@ body {
 /* ========FIXED IMG========= */
 
 .blog-header {
-  background-image: url("_images/home-header-fixed.jpg");
-  min-height: 0px;
+  background-image: url(/_images/home-header-fixed.jpg);
+  min-height: 0px;  
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
