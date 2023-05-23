@@ -45,13 +45,13 @@ body {
 
 /* ========FIXED IMG========= */
 
-#home-header{
-  background-image: url(../_images/home-header-fixed.jpg);
+#home-header {
+  background-image: url("../_images/home-header-fixed.jpg");
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 0px;  
+  min-height: 0px;
   padding: 200px 0px;
   margin-bottom: 0px;
 }
@@ -127,7 +127,7 @@ footer {
 
 #media {
   background-color: #c2cceb;
-  padding: 2.6em 0px 2.1em 0px;
+  padding: 2em 0px 1.7em 0px;
 }
 
 footer h3 {
@@ -141,15 +141,11 @@ i {
 }
 
 @media (max-width: 768px) {
-  #media{
+  #media {
     padding: 10px 0px;
   }
 
-  #copyright{
-    /* height: 50px; */
-    /* padding: 40px; */
-    /* margin: auto; */
-  }
+
 }
 
 /* ======== Copyright ========= */
@@ -172,7 +168,7 @@ i {
 /* ================================================== */
 
 
-#products-main{
+#products-main {
   padding-top: 10px;
   text-align: center;
   margin: 30px auto;
@@ -332,35 +328,35 @@ i {
 /* ================== CONTACT PAGE ================== */
 /* ================================================== */
 
-#contact-main{
+#contact-main {
   margin-top: 10rem;
   color: #47253f;
   text-align: center;
 }
 
-#contact-pseudoGrid{
-  margin: 1% 0px 2% 0px ;
+#contact-pseudoGrid {
+  margin: 1% 0px 2% 0px;
   border-radius: 10px;
   border: #b0beec 7px solid;
   width: 80%;
   display: inline-flex;
 }
 
-#contact-box-long{
+#contact-box-long {
   width: 35%;
   padding: 4px 5px;
   text-align: left;
   border: #000000 1px solid;
 }
 
-#contact-box{
+#contact-box {
   width: 25%;
   padding: 4px 5px;
   text-align: left;
   border: #000000 1px solid;
 }
 
-#contact-main img{
+#contact-main img {
   width: 70%;
 }
 
@@ -368,11 +364,11 @@ i {
 /* =============== CONTACT MEDIA QUERIES =============== */
 
 @media (max-width: 768px) {
-  #contact-main{
+  #contact-main {
     margin-top: 9rem;
   }
 
-  #contact-pseudoGrid{
+  #contact-pseudoGrid {
     margin: 10px auto 15px auto;
     border-radius: 10px;
     border: #b0beec 7px solid;
@@ -380,47 +376,67 @@ i {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
   }
-  
+
   #contact-box,
-  #contact-box-long{
+  #contact-box-long {
     width: 100%;
   }
-  
-}
-
-@media (max-width: 560px){
-
-
-  #contact-pseudoGrid{
-  border: none;
-  display: block;
-}
 
 }
 
-@media (max-width: 430px){
-  #contact-main{
-    margin-top: 9.5rem;
-  }
-  
-  #contact-pseudoGrid{
+@media (max-width: 560px) {
+  #contact-pseudoGrid {
     border: none;
     display: block;
   }
-  
+
+}
+
+@media (max-width: 430px) {
+  #contact-main {
+    margin-top: 9.5rem;
+  }
+
+  #contact-pseudoGrid {
+    border: none;
+    display: block;
+  }
+
   #contact-box-long,
-  #contact-box{
+  #contact-box {
     padding: 2px 5px;
     border: #ebd8d8 1px solid;
   }
-  
-  #contact-main img{
+
+  #contact-main img {
     width: 80%;
     margin-bottom: 5px;
   }
 }
 
 
+/* ================================================== */
+/* ================== CONTACT PAGE ================== */
+/* ================================================== */
+
+#cart-main {
+  background-color: #ecdbdb;
+  color: #47253f;
+  padding: 20px 0px 5px 5rem;
+  margin: 9rem 0px 0px 0px;
+}
+
+@media (max-width: 768px) {
+  #cart-main {
+    padding: 20px 0px 5px 2rem;
+  }
+}
+
+@media (max-width: 430px) {
+  #cart-main {
+    padding: 10px 0px 05px 1rem;
+  }
+}
 
 /* ======================COMMON STUFF====================== */
 
@@ -437,8 +453,9 @@ i {
 }
 
 @media (max-width: 768px) {
+
   .blog-header,
-  #products-main,{
+  #products-main {
     margin-top: 8rem;
   }
 }
@@ -494,9 +511,7 @@ i {
 
 }
 
-@madia (max-height: 430px){
 
-}
 
 @media (max-width: 430px) {
   .blog-header {
